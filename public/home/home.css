@@ -1,0 +1,79 @@
+body {
+    overflow: hidden;
+    padding-left: 0;
+}
+
+#overarchingDiv {
+    width: 105%;
+    height: 100rem;
+    max-width: 2000px;
+    min-width: 300px;
+    max-height: 5000px;
+    min-height: 400px;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+#overarchingDiv > * {
+    display: inline-block;
+    width: 49.5%;
+    height: 105%;
+    max-width: 1800px;
+    min-width: 150px;
+    max-height: 5000px;
+    min-height: 400px;
+}
+
+#writingDiv {
+    background-color: aliceblue;
+    margin-left: -5%;
+    transition: all 0.5s;
+}
+
+#writingDiv:hover {
+    background-color: rgb(229, 96, 236);
+    color: white;
+    font-size: 125%;
+    transition: all 2s;
+}
+
+#codingDiv {
+    background-color: rgb(180, 233, 233);
+    transition: all 0.5s;
+}
+
+#codingDiv:hover {
+    background-color: rgb(20, 60, 95);
+    color: white;
+    font-size: 150%;
+    transition: all 2s;
+}
+
+p {
+    width: 50%;
+    height: 30%;
+    max-width: 200px;
+    max-height: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40%;
+}
+
+img {
+    position: sticky;
+    z-index: 100;
+    bottom: 0%;
+    left: 35%;
+    width: 20%;
+    height: 30%;
+    max-width: 1000px;
+    min-width: 100px;
+    max-height: 3000px;
+    min-height: 200px;
+    transition: all 1s;
+
+}
+
+img:hover {
+    width: 30%;
+}

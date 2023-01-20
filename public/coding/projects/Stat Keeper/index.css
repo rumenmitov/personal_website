@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+}
+
+table#resultTable th {
+    background-color: rgb(112, 112, 253);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+table#resultTable tr:nth-child(2n-1) {
+    background-color: rgb(154, 204, 250);
+}
+
+table#resultTable tr:nth-child(1) {
+    font-weight: bold;
+}
+
+table#resultTable tr:nth-last-child(1) {
+    font-weight: bold;
+    border-top: double 5px;
+}
+
+table#resultTable td:hover {
+    background-color: cyan;
+}
+
+table#resultTable tr:hover {
+    background-color: rgb(214, 244, 250);
+}
+
+table#resultTable td {
+    border: black solid 1px;
+    padding: 5px;
+    text-align: center;
+}

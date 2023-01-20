@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/crown.png">
+        <title>Memory Game</title>
+        <style>
+            body {
+                background: white;
+                font-size: large;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+                #field {
+                    height: fit-content;
+                    width: fit-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                    td {
+                        border: solid;
+                        width: 300px;
+                        height: 400px;
+                        background: url("images/question_mark.png");
+                    }
+
+                        td.knight {
+                            background: url("images/knight.png");
+                        }
+
+                        td.princess {
+                            background: url("images/princess.png");
+                        }
+
+                        td.dragon {
+                            background: url("images/dragon.png");
+                        }
+
+                        td.unkown {
+                            background: url("images/question_mark.png");
+                        }
+                
+                #result {
+                    position: fixed;
+                    left: 19%;
+                    top: 30%;
+                    width: 50%;
+                    height: 200px;
+                    background: gold;
+                    opacity: 0.9;
+                    border: solid;
+                    text-align: center;
+                    padding-top: 5%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    display: none;
+                    font-size: 130%;
+                    font-weight: bold;
+
+                }
+
+                    #celebrateButton {
+                        width: 40%;
+                        height: fit-content;
+                        margin-top: 5%;
+                        padding: 2% 3% 2% 3%;
+                        background: rgb(23, 145, 185);
+                        color: whitesmoke;
+                        font-weight: bold;
+                    }
+        </style>
+        <script src="memoryGame.js"></script>
+    </head>
+    <body>
+        <table id="field">
+        </table>
+
+        <div id="result">Your result is : 100 points! Cliick the button below below to celebrate!</div>
+    </body>
+
+</html>

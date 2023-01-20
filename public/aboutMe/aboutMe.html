@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="shortcut icon"
+    href="../images/iconPic.png"
+    type="image/x-icon"
+  />
+    <title>About Me</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./qnaApp.js"></script>
+    <link rel="stylesheet" href="aboutMe.css">
+</head>
+<body>
+    <img id='homeIcon' src="../images/homeIcon.png" alt="img" onclick="location.href = '../home/home.html';">
+    <h1>About Me</h1>
+    <div class="qna" ng-app="qnaApp" ng-controller="qnaCntrl">
+        <header>Quick QnA</header>
+            <div class="card" ng-repeat="x in qnaArray">
+                <div class="responses">
+                    <p class="q" ng-bind="x.question"></p>
+                    <p class="a" ng-bind="x.answer"></p>
+                </div>
+                <img src="{{x.image}}" alt="" srcset="" width="120vw" height="240vh">
+            </div>
+    </div>
+    <div id="comments">
+        <header>Ask a Question</header>
+        <p>Feel free to get in touch and share your thoughts:</p>
+        <form action="http://192.168.178.86:3100/comment" method="post">
+          <label for="username">Name:</label>
+          <input type="text" name="username" placeholder="John Doe" />
+          <label for="username">Email:</label>
+          <input type="email" name="email" placeholder="johndoe@email.com" />
+          <label for="username">Comment:</label>
+          <textarea
+            name="comment"
+            required
+            rows="4"
+            cols="50"
+            placeholder="Your thoughts go here..."
+          ></textarea>
+          <input type="submit" value="Send Message" id="submitButton"/>
+        </form>
+      </div>
+</body>
+</html>

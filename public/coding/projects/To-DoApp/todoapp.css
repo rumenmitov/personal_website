@@ -1,0 +1,91 @@
+body {
+    background: rgb(252, 252, 227);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    line-height: normal;
+}
+
+    header {
+        font-weight: bold;
+        font-size: 300%;
+        color: darkgoldenrod;
+        padding-top: 5%;
+    }
+
+    div#controller {
+        margin: 7%;
+    }
+
+        div#controller > * {
+            margin: 1.5%;
+            height: 50px;
+        }
+
+            #taskInput {
+                width: 40%;
+            }
+
+                #taskInput::placeholder {
+                    font-size: 200%;
+                    opacity: 40%;
+                }
+
+            #addButton, #clearAll {
+                margin-top: 100px;
+                width: 8%;
+                background-color: yellowgreen;
+                border: outset;
+                font-size: 100%;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+            }
+
+            #clearAll {
+                background-color: red;
+            }
+
+    div#tasks {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        height: fit-content;
+        border: outset 2px;
+        background-color: aliceblue;
+        padding-left: 5%;
+        text-align: left;
+    }
+
+        #prompt {
+            opacity: 50%;
+            font-style: italic;
+        }
+
+        div#tasks .task {
+            font-size: 120%;
+        }
+
+            div#tasks .completed {
+                font-size: 120%;
+                color: rgb(102, 163, 11);
+                text-decoration: line-through;
+            }
+
+        div#tasks .deleteButton {
+            height: 40px;
+            width: 40px;
+            display: inline;
+            margin-left: 5%;
+            background: url(images/trash_bin.png);
+            border: solid;
+        }
+
+        div#tasks .completedButton {
+            height: 40px;
+            width: 40px;
+            display: inline;
+            margin-left: 10%;
+            background: url(images/whiteTick_on_greenBackground.png);
+            border: solid;
+        }
+
