@@ -13,7 +13,7 @@ let app = express()
 .use(express.static(__dirname + '/public'));
 
 http.createServer((req, res)=>{
-    res.redirect('https://rumenmitov.tk');
+    res.setHeader(301, { 'Location': 'https://rumenmitov.tk' });
 })
 .listen(80);
 
