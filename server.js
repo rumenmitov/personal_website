@@ -12,8 +12,7 @@ const sslCredentials = {
 let app = express()
 .use(express.static(__dirname + '/public'));
 
-http.createServer(app)
-.use((req, res)=>{
+http.createServer((req, res)=>{
     res.redirect('https://rumenmitov.tk');
 })
 .listen(80);
