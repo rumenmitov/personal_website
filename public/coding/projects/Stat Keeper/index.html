@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stat Keeper</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="./app.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
     <table id="playersTable">
@@ -80,5 +81,7 @@
 
     <div id="finalResult">
     </div>
+    <hr>
+    <button id="finishBtn">Finish</button>
 </body>
 </html>

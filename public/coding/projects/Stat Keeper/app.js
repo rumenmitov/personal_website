@@ -20,7 +20,7 @@ console.table({
 });
 console.log("To close these instructions press CTRL+Shift+I. Enjoy 🏀");
 
-
+let table;
 let playersTable;
 let playersArray = [];
 let addButton;
@@ -28,6 +28,7 @@ let inputDiv;
 let inputStat;
 let applyStat;
 let finalResult;
+let finishBtn;
 
 let addPlayersLock = false;
 let updateStatsLock = true;
@@ -136,6 +137,7 @@ window.onload = () => {
     inputStat = document.querySelector("#inputStat");
     applyStat = document.querySelector("#applyStat");
     finalResult = document.querySelector("#finalResult");
+    finishBtn = document.querySelector('#finishBtn');
     
     playersTable.parentElement.onkeypress = (event) => {
         if (event.keyCode === 13) addPlayers();
@@ -144,7 +146,16 @@ window.onload = () => {
         if (event.keyCode === 13) updateStats();
     };
     addButton.addEventListener("click", addPlayers);
-    applyStat.addEventListener("click", updateStats);    
+    applyStat.addEventListener("click", updateStats);
+    
+    finishBtn.addEventListener('click', ()=>{
+        updateStatsLock = true;
+        addButton.style ='display:none;';
+
+        let workbook = XLSX.utils.table_to_book(finalResult);
+        let ws = workbook.Sheets['Sheet1'];
+        XLSX.writeFile(workbook, 'gameStats.xlsb');
+    });
 };
 
 function addPlayers() {
