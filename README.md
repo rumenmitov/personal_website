@@ -1,1 +1,1 @@
-!\[my badge\](https://badgen.net/badge/hello/world/red?icon=twitter)
+[![Website](https://github.com/rumenmitov/personal_website/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/rumenmitov/personal_website/actions/workflows/pages/pages-build-deployment)
