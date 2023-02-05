@@ -15,7 +15,7 @@ let app = express()
 http.createServer((req, res)=>{
     res.setHeader(301, { 'Location': 'https://rumenmitov.tk' });
 })
-.listen(80);
+.listen(3000);
 
 https.createServer(sslCredentials, app).listen(443);
 
