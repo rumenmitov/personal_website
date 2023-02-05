@@ -1,1 +1,0 @@
-[![Website](https://github.com/rumenmitov/personal_website/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/rumenmitov/personal_website/actions/workflows/pages/pages-build-deployment)
