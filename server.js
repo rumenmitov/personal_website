@@ -15,9 +15,9 @@ let app = express()
 http.createServer((req, res)=>{
     res.setHeader(301, { 'Location': 'https://rumenmitov.tk' });
 })
-.listen(3000);
+.listen(80);
 
-// https.createServer(sslCredentials, app).listen(443);
+https.createServer(sslCredentials, app).listen(443);
 
 console.clear();
 console.log('Server running on ports 80 and 443 ✔\n'.green);
