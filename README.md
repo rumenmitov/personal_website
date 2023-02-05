@@ -1,1 +1,1 @@
-https://badgen.net/badge/:My Website/:online/:green?icon=github
+!\[my badge\](https://badgen.net/badge/hello/world/red?icon=twitter)
