@@ -17,7 +17,7 @@ http.createServer((req, res)=>{
 })
 .listen(3000);
 
-https.createServer(sslCredentials, app).listen(443);
+// https.createServer(sslCredentials, app).listen(443);
 
 console.clear();
 console.log('Server running on ports 80 and 443 ✔\n'.green);
